@@ -8,8 +8,8 @@ a {
 
 .courseGrid {
     width: 100%;
-    height: 300px;
-    padding: 40px 0 3rem 0;
+    padding: 4rem;
+    // padding: 40px 0 3rem 0;
     background-image: url(../photos/backgroundcourse.jpeg);
     background-size: cover;
     background-position: center bottom;
@@ -27,7 +27,7 @@ a {
             h1 {
                 color: #072f60;
                 font-size: 40px;
-                font-weight: bolder;
+                font-weight: bold;
                 font-family: Heebo;
             }
 
@@ -136,59 +136,88 @@ a {
     }
 
     // topText end 
-    .botBig{
+    .botBig {
         width: 90%;
         margin: auto;
         padding-top: 3rem;
-        .courseBox{
-            border-radius: 6px;
+
+        .courseBox {
+            border-radius: 8px;
+            overflow: hidden;
             box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
-            height: 450px;
-            position: relative;
+            // height: 500px;
             margin-bottom: 20px;
+            position: relative;
+
             // imgBox start 
-            .imgBox{
-                img{
+            .imgBox {
+                position: relative;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    opacity: 0;
                     border-radius: 10px;
+                    transition: 0.5s;
+                    background-color: #1c233694;
                 }
-                
-              
-              
+
+                &:hover {
+                    &::before {
+                        opacity: 1;
+                    }
+                }
+
 
             }
+
             // imgBox end 
-            .miniText{
-                padding: 30px;
-                span{
-                    color: $aqua;
-                    padding: 7px 12px;
-                    font-size: 13px;
-                    font-weight: 600;
-                    background: #3bbca712;
-                    margin-bottom: 2rem;
-                    transition: 0.4s;
-                    border-radius: 5px;
-                    &:hover{
-                        background: $aqua;
-                        color: $white;
-                    }
-                }
-                h6{
-                    margin: 20px 0;
-                    color: $darkblue;
-                    font-weight: 600;
-                    transition: 0.4s;
-                    cursor: pointer;
-                    &:hover{
+            .miniText {
+                .midText {
+                    padding: 15px 30px;
+
+                    span {
+                        display: inline-block;
                         color: $aqua;
+                        padding: 7px 12px;
+                        font-size: 13px;
+                        font-weight: 600;
+                        background: #3bbca712;
+                        transition: 0.4s;
+                        border-radius: 5px;
+
+                        &:hover {
+                            background: $aqua;
+                            color: $white;
+                        }
+                    }
+
+                    h6 {
+                        margin: 20px 0;
+                        color: $darkblue;
+                        font-weight: 600;
+                        transition: 0.4s;
+                        cursor: pointer;
+
+                        &:hover {
+                            color: $aqua;
+                        }
                     }
                 }
-                .person{
-                    img{
+
+                .person {
+                    padding: 0 30px;
+
+                    img {
                         border-radius: 20px;
                         width: 35px;
                     }
-                    p{
+
+                    p {
                         display: inline;
                         margin-left: 5px;
                         font-size: 15px;
@@ -196,26 +225,132 @@ a {
                         color: gray;
                     }
                 }
-            }
-            &:before{
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                width: 100%;
-                height: 49%;
-                opacity: 0;
-                border-radius: 10px;
-                transition: 0.5s;
-                background-color: #1c233694;
-            }
-            &:hover{
-                &::before{
-                    opacity: 1;
+
+                .scoreBox {
+                    padding: 10px 30px;
+                    margin-top: 2rem;
+                    border-top: 1px solid rgba(128, 128, 128, 0.184);
+
+                    .left {
+                        p {
+                            display: inline;
+                            margin-right: 10px;
+                            color: $textColor;
+                            font-size: 14px;
+                            font-weight: 200;
+
+                            i {
+                                margin-right: 7px;
+                                color: $aqua;
+                                font-size: 15px;
+                            }
+                        }
+
+                    }
+
+                    // left end 
+                    // right start 
+                    .right {
+                        text-align: end;
+
+                        i {
+                            color: $yellow;
+                        }
+                    }
+
                 }
             }
 
+            .free {
+                position: absolute;
+                right: 10%;
+                top: 45%;
+                transform: translate(-10%, -45%);
+
+                span {
+                    z-index: 10;
+                    padding: 20px 11px;
+                    background-color: $aqua;
+                    font-size: 13px;
+                    font-weight: 500;
+                    border-radius: 50px;
+                    color: $white;
+                }
+            }
+        }
+    }
+
+    .pagesBox {
+        width: 9%;
+        margin: 30px auto;
+        text-align: center;
+
+        ul {
+            li {
+                span {
+                    font-family: Heebo;
+                    color: $textColor;
+                    margin-left: 15px;
+
+                    &.active {
+                        padding: 5px 13px;
+                        border-radius: 20px;
+                        background-color: $aqua;
+                        color: $white;
+                    }
+
+                    i {
+                        font-size: 23px;
+                    }
+
+
+                }
+            }
         }
     }
 }
+
 // section expLore end 
+
+
+
+
+
+// RESPONSIVE START 
+
+
+@media (max-width: 768px) {
+    .expLore{
+        .topText{
+            width: 100%;
+            ul{
+                width: 80%;
+                margin: 1rem auto;
+                li{
+                    margin-left: 15px;
+                    a{
+
+                    }
+                }
+            }
+        }
+        .botBig{
+            .courseBox{
+                .imgBox{
+                    
+                }
+                .free{
+                    top: 55%;
+                    transform: translateY(-55%);
+                }
+            }
+        }
+    }
+
+}
+
+
+
+@media (min-width: 768px) and (max-width: 992px) {}
+
+@media (min-width: 992px) and (max-width: 1200px) {}

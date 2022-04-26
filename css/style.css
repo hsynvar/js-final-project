@@ -1,13 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 a {
   text-decoration: none;
 }
 
 .courseGrid {
   width: 100%;
-  height: 300px;
-  padding: 40px 0 3rem 0;
+  padding: 4rem;
   background-image: url(../photos/backgroundcourse.jpeg);
   background-size: cover;
   background-position: center bottom;
@@ -26,7 +25,7 @@ a {
 .courseGrid .bigBox .textBox h1 {
   color: #072f60;
   font-size: 40px;
-  font-weight: bolder;
+  font-weight: bold;
   font-family: Heebo;
 }
 
@@ -141,40 +140,58 @@ a {
 }
 
 .expLore .botBig .courseBox {
-  border-radius: 6px;
+  border-radius: 8px;
+  overflow: hidden;
   -webkit-box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
           box-shadow: 0 0 16px 0 rgba(67, 65, 65, 0.217);
-  height: 450px;
-  position: relative;
   margin-bottom: 20px;
+  position: relative;
 }
 
-.expLore .botBig .courseBox .imgBox img {
+.expLore .botBig .courseBox .imgBox {
+  position: relative;
+}
+
+.expLore .botBig .courseBox .imgBox:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
   border-radius: 10px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: #1c233694;
 }
 
-.expLore .botBig .courseBox .miniText {
-  padding: 30px;
+.expLore .botBig .courseBox .imgBox:hover::before {
+  opacity: 1;
 }
 
-.expLore .botBig .courseBox .miniText span {
+.expLore .botBig .courseBox .miniText .midText {
+  padding: 15px 30px;
+}
+
+.expLore .botBig .courseBox .miniText .midText span {
+  display: inline-block;
   color: #3BBCA7;
   padding: 7px 12px;
   font-size: 13px;
   font-weight: 600;
   background: #3bbca712;
-  margin-bottom: 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   border-radius: 5px;
 }
 
-.expLore .botBig .courseBox .miniText span:hover {
+.expLore .botBig .courseBox .miniText .midText span:hover {
   background: #3BBCA7;
   color: white;
 }
 
-.expLore .botBig .courseBox .miniText h6 {
+.expLore .botBig .courseBox .miniText .midText h6 {
   margin: 20px 0;
   color: #141948;
   font-weight: 600;
@@ -183,8 +200,12 @@ a {
   cursor: pointer;
 }
 
-.expLore .botBig .courseBox .miniText h6:hover {
+.expLore .botBig .courseBox .miniText .midText h6:hover {
   color: #3BBCA7;
+}
+
+.expLore .botBig .courseBox .miniText .person {
+  padding: 0 30px;
 }
 
 .expLore .botBig .courseBox .miniText .person img {
@@ -200,21 +221,90 @@ a {
   color: gray;
 }
 
-.expLore .botBig .courseBox:before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 49%;
-  opacity: 0;
-  border-radius: 10px;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-  background-color: #1c233694;
+.expLore .botBig .courseBox .miniText .scoreBox {
+  padding: 10px 30px;
+  margin-top: 2rem;
+  border-top: 1px solid rgba(128, 128, 128, 0.184);
 }
 
-.expLore .botBig .courseBox:hover::before {
-  opacity: 1;
+.expLore .botBig .courseBox .miniText .scoreBox .left p {
+  display: inline;
+  margin-right: 10px;
+  color: #666666;
+  font-size: 14px;
+  font-weight: 200;
+}
+
+.expLore .botBig .courseBox .miniText .scoreBox .left p i {
+  margin-right: 7px;
+  color: #3BBCA7;
+  font-size: 15px;
+}
+
+.expLore .botBig .courseBox .miniText .scoreBox .right {
+  text-align: end;
+}
+
+.expLore .botBig .courseBox .miniText .scoreBox .right i {
+  color: #FFD24D;
+}
+
+.expLore .botBig .courseBox .free {
+  position: absolute;
+  right: 10%;
+  top: 45%;
+  -webkit-transform: translate(-10%, -45%);
+          transform: translate(-10%, -45%);
+}
+
+.expLore .botBig .courseBox .free span {
+  z-index: 10;
+  padding: 20px 11px;
+  background-color: #3BBCA7;
+  font-size: 13px;
+  font-weight: 500;
+  border-radius: 50px;
+  color: white;
+}
+
+.expLore .pagesBox {
+  width: 9%;
+  margin: 30px auto;
+  text-align: center;
+}
+
+.expLore .pagesBox ul li span {
+  font-family: Heebo;
+  color: #666666;
+  margin-left: 15px;
+}
+
+.expLore .pagesBox ul li span.active {
+  padding: 5px 13px;
+  border-radius: 20px;
+  background-color: #3BBCA7;
+  color: white;
+}
+
+.expLore .pagesBox ul li span i {
+  font-size: 23px;
+}
+
+@media (max-width: 768px) {
+  .expLore .topText {
+    width: 100%;
+  }
+  .expLore .topText ul {
+    width: 80%;
+    margin: 1rem auto;
+  }
+  .expLore .topText ul li {
+    margin-left: 15px;
+  }
+  .expLore .botBig .courseBox .free {
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
+  }
 }
 /*# sourceMappingURL=style.css.map */
