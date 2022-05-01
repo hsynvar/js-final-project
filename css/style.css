@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Heebo&display=swap");
 a {
   text-decoration: none;
 }
@@ -25,34 +26,31 @@ a {
 .courseGrid .bigBox .textBox h1 {
   color: #072f60;
   font-size: 40px;
-  font-weight: bold;
+  font-weight: bolder;
   font-family: Heebo;
 }
 
-.courseGrid .bigBox .textBox .home {
-  color: #666666;
-  -webkit-transition: 0.2s;
-  transition: 0.2s;
-  font-weight: 200;
-}
-
-.courseGrid .bigBox .textBox .home:hover {
-  color: #3BBCA7;
-}
-
-.courseGrid .bigBox .textBox .home:hover .grid {
+.courseGrid .bigBox .textBox p {
   color: #666666;
 }
 
-.courseGrid .bigBox .textBox .slash {
-  margin: 0 5px;
+.courseGrid .bigBox .textBox p span:first-child {
+  margin-right: 10px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-.courseGrid .bigBox .textBox .grid {
-  font-weight: 200;
+.courseGrid .bigBox .textBox p span:first-child:hover {
   color: #3BBCA7;
-  -webkit-transition: 0.2s ease-in;
-  transition: 0.2s ease-in;
+}
+
+.courseGrid .bigBox .textBox p span:first-child:hover .grid {
+  color: #666666;
+}
+
+.courseGrid .bigBox .textBox p span:last-child {
+  margin-left: 10px;
+  color: #3BBCA7;
 }
 
 .expLore .topText {
@@ -291,6 +289,19 @@ a {
 }
 
 @media (max-width: 768px) {
+  .courseGrid {
+    padding: 3rem;
+  }
+  .courseGrid .bigBox .textBox {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .courseGrid .bigBox .textBox h1 {
+    font-size: 32px;
+  }
+  .courseGrid .bigBox .textBox p {
+    font-size: 14px;
+  }
   .expLore .topText {
     width: 100%;
   }
@@ -305,6 +316,161 @@ a {
     top: 55%;
     -webkit-transform: translateY(-55%);
             transform: translateY(-55%);
+  }
+}
+
+a {
+  text-decoration: none;
+  font-family: heebo;
+}
+
+#footer {
+  padding-top: 3rem;
+  background-color: #f6f7f9;
+  font-family: Heebo;
+}
+
+#footer .footBox {
+  width: 90%;
+  margin: auto;
+  padding: 20px 0;
+}
+
+#footer .footBox .boxLeft {
+  width: 20%;
+}
+
+#footer .footBox .boxLeft img {
+  width: 150px;
+  margin-bottom: 20px;
+}
+
+#footer .footBox .boxLeft span {
+  color: #666666;
+  line-height: 28px;
+}
+
+#footer .footBox .boxLeft .icons {
+  margin-top: 20px;
+}
+
+#footer .footBox .boxLeft .icons i {
+  padding: 8px;
+  border-radius: 20px;
+  border: 1px solid #3BBCA7;
+  color: #3BBCA7;
+  font-size: 18px;
+  margin-right: 8px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+#footer .footBox .boxLeft .icons i:hover {
+  background-color: #3BBCA7;
+  color: white;
+}
+
+#footer .footBox .boxMid ul li a {
+  padding: 5px 0;
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  color: #666666;
+}
+
+#footer .footBox .boxMid ul li a h5 {
+  color: #141948;
+  margin-bottom: 20px;
+  font-weight: bolder;
+}
+
+#footer .footBox .boxMid ul li a:hover {
+  color: #3BBCA7;
+}
+
+#footer .footBox .boxRight {
+  width: 25%;
+}
+
+#footer .footBox .boxRight h5 {
+  color: #141948;
+  margin-bottom: 20px;
+  font-family: Heebo;
+  font-weight: bolder;
+}
+
+#footer .footBox .boxRight a {
+  display: block;
+  color: #666666;
+  padding: 9px 0;
+  line-height: 28px;
+}
+
+#footer .footBox .boxRight a i {
+  color: #3BBCA7;
+  margin-right: 5px;
+  font-size: 19px;
+}
+
+#footer .footBox .botFoot {
+  width: 100%;
+  border-top: 1px solid rgba(150, 150, 150, 0.187);
+  padding-top: 20px;
+}
+
+#footer .footBox .botFoot .copyright {
+  width: 30%;
+  margin: auto;
+  text-align: center;
+}
+
+#footer .footBox .botFoot .copyright p {
+  color: #666666;
+}
+
+@media (max-width: 768px) {
+  #footer .footBox {
+    padding: 3rem;
+  }
+  #footer .footBox .boxLeft {
+    width: 90%;
+    margin-bottom: 2rem;
+  }
+  #footer .footBox .boxMid {
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+  #footer .footBox .boxRight {
+    width: 100%;
+  }
+  #footer .footBox .botFoot {
+    margin-top: 20px;
+  }
+  #footer .footBox .botFoot .copyright {
+    width: 100%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #footer .footBox {
+    padding: 2rem;
+  }
+  #footer .footBox .boxLeft {
+    width: 45%;
+    margin-bottom: 35px;
+  }
+  #footer .footBox .boxMid {
+    width: 45%;
+  }
+  #footer .footBox .boxRight {
+    width: 45%;
+    margin-top: 10px;
+  }
+  #footer .footBox .botFoot {
+    margin-top: 20px;
+  }
+  #footer .footBox .botFoot .copyright {
+    width: 80%;
   }
 }
 /*# sourceMappingURL=style.css.map */
