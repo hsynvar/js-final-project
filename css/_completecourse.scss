@@ -1,0 +1,66 @@
+@import'_variable';
+
+.completeCourse{
+    background: url(../photos/backgrounddigital.jpeg);
+    padding: 2rem 0;
+    .bigCourse{
+        width: 90%;
+        margin: auto;
+        padding: 3rem 0;
+        .textBox{
+            width: 70%;
+            .icons{
+                i{
+                    color: $yellow;
+                    font-size: 17px;
+                }
+                span{
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: $darkblue;
+                }
+            }
+            h2{
+                color: $darkblue;
+                padding: 20px 0;
+                font-weight: 600;
+            }
+            span{
+                color: $textColor;
+                font-size: 18px;
+            }
+            .person {
+                width: 80%;
+                margin-top: 20px;
+                border-right: 1px solid rgba(144, 142, 142, 0.184);
+                img {
+                    border-radius: 25px;
+                    width: 40px;
+                }
+
+                p {
+                    display: inline;
+                    margin-left: 8px;
+                    font-size: 13px;
+                    color: $darkblue;
+                    font-weight: bold;
+                }
+            }
+            
+            .update{
+                margin-top: 20px;
+                padding-top: 8px;
+             
+                h6{
+                    display: inline;
+                    color: $darkblue;
+                }
+                span{
+                    font-size: 13px;
+                    color: $aqua;
+                    font-weight: 300;
+                }
+            }
+        }
+    }
+}
