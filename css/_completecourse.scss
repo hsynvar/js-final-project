@@ -1,38 +1,46 @@
 @import'_variable';
 
-.completeCourse{
+.completeCourse {
     background: url(../photos/backgrounddigital.jpeg);
     padding: 2rem 0;
-    .bigCourse{
+
+    .bigCourse {
         width: 90%;
         margin: auto;
         padding: 3rem 0;
-        .textBox{
+
+        .textBox {
             width: 70%;
-            .icons{
-                i{
+
+            .icons {
+                i {
                     color: $yellow;
                     font-size: 17px;
                 }
-                span{
+
+                span {
                     font-size: 13px;
                     font-weight: bold;
                     color: $darkblue;
                 }
             }
-            h2{
+
+            h2 {
                 color: $darkblue;
                 padding: 20px 0;
                 font-weight: 600;
             }
-            span{
+
+            span {
                 color: $textColor;
                 font-size: 18px;
             }
+
             .person {
                 width: 80%;
                 margin-top: 20px;
                 border-right: 1px solid rgba(144, 142, 142, 0.184);
+
                 img {
                     border-radius: 25px;
                     width: 40px;
@@ -46,16 +54,17 @@
                     font-weight: bold;
                 }
             }
-            
-            .update{
+
+            .update {
                 margin-top: 20px;
                 padding-top: 8px;
-             
-                h6{
+
+                h6 {
                     display: inline;
                     color: $darkblue;
                 }
-                span{
+
+                span {
                     font-size: 13px;
                     color: $aqua;
                     font-weight: 300;
@@ -63,4 +72,134 @@
             }
         }
     }
+}
+
+.overview {
+    padding: 2rem 0;
+
+    .allView {
+        width: 90%;
+        margin: auto;
+
+        .leftView {
+
+            .titles {
+                margin-bottom: 2rem;
+                ul {
+                    li {
+                        h5 {
+                            padding: 0 35px 8px 15px ;
+                            border-bottom: 3px solid #ababab;
+                            color: #ababab;
+                            &.first {
+                                color: $darkblue;
+                                border-bottom: 3px solid $aqua;
+                            }
+                        }
+                    }
+                }
+            }
+            .midTop{
+                p{
+                    font-size: 17px;
+                    line-height: 28px;
+                    color: $textColor;
+                    margin-bottom: 30px;
+                    font-weight: 300;
+                }
+            }
+            .botTop{
+                margin-top: 2rem;
+                padding: 3rem;
+                background-color: $lightgray;
+                h3{
+                    color: $darkblue;
+                }
+                .boxLeft{
+                    ul{
+                        li{
+                            .text{
+                                color: $textColor;
+                                font-weight: 300;
+                                line-height: 35px;
+                            }
+                            .icon{
+                                display: inline-block;
+                                color: $darkblue;
+                                font-size: 20px;
+                                font-weight: 700;
+                                i{
+                                }
+                            }
+                        }
+                    }
+                }
+                .boxRight{
+                    ul{
+                        li{
+                            .text{
+                                color: $textColor;
+                                font-weight: 300;
+                                line-height: 35px;
+                                
+                            }
+                            .icon{
+                                color: $darkblue;
+                                font-size: 20px;
+                                font-weight: 700;
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+// responsive start
+@media (max-width: 768px) {
+
+    // completeCourse start 
+
+    .completeCourse {
+        .bigCourse {
+            .textBox {
+                width: 90%;
+
+                h2 {
+                    font-size: 35px;
+                }
+
+                span {
+                    font-size: 18px;
+                    line-height: 28px;
+
+                }
+
+                .person {
+                    margin-top: 2rem;
+
+                }
+
+                .update {
+                    padding: 0;
+                    margin: -15px 0 0 3.3rem;
+
+                    h6 {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+
+    // completeCourse end 
+
 }

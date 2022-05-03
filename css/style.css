@@ -546,4 +546,94 @@ a {
   color: #3BBCA7;
   font-weight: 300;
 }
+
+.overview {
+  padding: 2rem 0;
+}
+
+.overview .allView {
+  width: 90%;
+  margin: auto;
+}
+
+.overview .allView .leftView .titles {
+  margin-bottom: 2rem;
+}
+
+.overview .allView .leftView .titles ul li h5 {
+  padding: 0 35px 8px 15px;
+  border-bottom: 3px solid #ababab;
+  color: #ababab;
+}
+
+.overview .allView .leftView .titles ul li h5.first {
+  color: #141948;
+  border-bottom: 3px solid #3BBCA7;
+}
+
+.overview .allView .leftView .midTop p {
+  font-size: 17px;
+  line-height: 28px;
+  color: #666666;
+  margin-bottom: 30px;
+  font-weight: 300;
+}
+
+.overview .allView .leftView .botTop {
+  margin-top: 2rem;
+  padding: 3rem;
+  background-color: #f6f7f9;
+}
+
+.overview .allView .leftView .botTop h3 {
+  color: #141948;
+}
+
+.overview .allView .leftView .botTop .boxLeft ul li .text {
+  color: #666666;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.overview .allView .leftView .botTop .boxLeft ul li .icon {
+  display: inline-block;
+  color: #141948;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.overview .allView .leftView .botTop .boxRight ul li .text {
+  color: #666666;
+  font-weight: 300;
+  line-height: 35px;
+}
+
+.overview .allView .leftView .botTop .boxRight ul li .icon {
+  color: #141948;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .completeCourse .bigCourse .textBox {
+    width: 90%;
+  }
+  .completeCourse .bigCourse .textBox h2 {
+    font-size: 35px;
+  }
+  .completeCourse .bigCourse .textBox span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .completeCourse .bigCourse .textBox .person {
+    margin-top: 2rem;
+  }
+  .completeCourse .bigCourse .textBox .update {
+    padding: 0;
+    margin: -15px 0 0 3.3rem;
+  }
+  .completeCourse .bigCourse .textBox .update h6 {
+    font-size: 12px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
