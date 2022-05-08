@@ -99,6 +99,9 @@
                 border-bottom: 3px solid $aqua;
               }
             }
+            &.active{
+                
+            }
           }
         }
       }
@@ -274,10 +277,60 @@
               }
             }
           }
+          &.reviews{
+              .leftReview{
+                  padding: 30px 0;
+                  text-align: center;
+                  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                  h1{
+                      font-size: 4rem;
+                      color: $darkblue;
+                  }
+                  i{
+                      color: $yellow;
+                  }
+                  margin-top: 20px;
+                  p{
+                      color: $textColor;
+                  }
+
+              }
+              .rightReview{
+                  margin: 30px;
+                  .rates{
+                      .rateBox
+                      .left{
+                          i{
+                              color: $yellow;
+                              font-size: 18px;
+                              margin-left: 7px;
+                          }
+
+                      }
+                      .mid{
+                          margin-top: 8px;
+                        height: 8px;
+                        background-color: rgba(144, 142, 142, 0.184);
+                        .yellow{
+                            width: 50%;
+                            height: 100%;
+                            background-color: $yellow;
+                        }
+                    }
+                    .right{
+
+                    }
+                  }
+                 
+
+              }
+          }
         }
       }
     }
 
+
+    // rightview start 
     .rightView {
       box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
       border-radius: 0 0 10px 10px;
@@ -464,5 +517,38 @@
     }
   }
 
+
   // completeCourse end
+
+  .overview{
+      .allView{
+          .leftView{
+              .tabBottom{
+                  .tabBox{
+                    &.instructor{
+                        .instBox{
+                            .leftInst{
+                                text-align: center;
+                            }
+                            .rightInst{
+                                margin: 0;
+                                padding: 20px 0;
+                            }
+
+                        }
+                       
+  
+                    }
+
+                  }
+                 
+
+              }
+          }
+          .rightView{
+              margin: 0;
+          }
+      }
+  }
+
 }

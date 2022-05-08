@@ -793,6 +793,50 @@ a {
   line-height: 30px;
 }
 
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview {
+  padding: 30px 0;
+  text-align: center;
+  -webkit-box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+          box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  margin-top: 20px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview h1 {
+  font-size: 4rem;
+  color: #141948;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview i {
+  color: #FFD24D;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .leftReview p {
+  color: #666666;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview {
+  margin: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .rateBox
+.left i {
+  color: #FFD24D;
+  font-size: 18px;
+  margin-left: 7px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .mid {
+  margin-top: 8px;
+  height: 8px;
+  background-color: rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .leftView .tabBottom .tabBox.reviews .rightReview .rates .mid .yellow {
+  width: 50%;
+  height: 100%;
+  background-color: #FFD24D;
+}
+
 .overview .allView .rightView {
   -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
           box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -971,6 +1015,16 @@ a {
   }
   .completeCourse .bigCourse .textBox .update h6 {
     font-size: 12px;
+  }
+  .overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst {
+    text-align: center;
+  }
+  .overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst {
+    margin: 0;
+    padding: 20px 0;
+  }
+  .overview .allView .rightView {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=style.css.map */
