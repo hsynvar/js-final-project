@@ -604,22 +604,30 @@ a {
   margin: auto;
 }
 
-.overview .allView .leftView .titles {
+.overview .allView .leftView .tabCont {
   margin-bottom: 2rem;
 }
 
-.overview .allView .leftView .titles ul li h5 {
+.overview .allView .leftView .tabCont ul li h5 {
   padding: 0 35px 8px 15px;
   border-bottom: 3px solid #ababab;
   color: #ababab;
 }
 
-.overview .allView .leftView .titles ul li h5.first {
+.overview .allView .leftView .tabCont ul li h5.first {
   color: #141948;
   border-bottom: 3px solid #3BBCA7;
 }
 
-.overview .allView .leftView .midTop p {
+.overview .allView .leftView .tabBottom .tabBox {
+  display: none;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.active {
+  display: block;
+}
+
+.overview .allView .leftView .tabBottom .tabBox .midTop p {
   font-size: 17px;
   line-height: 28px;
   color: #666666;
@@ -627,47 +635,320 @@ a {
   font-weight: 300;
 }
 
-.overview .allView .leftView .botTop {
+.overview .allView .leftView .tabBottom .tabBox .botTop {
   margin-top: 2rem;
   padding: 3rem;
   background-color: #f6f7f9;
 }
 
-.overview .allView .leftView .botTop h3 {
+.overview .allView .leftView .tabBottom .tabBox .botTop h3 {
   color: #141948;
 }
 
-.overview .allView .leftView .botTop .boxLeft {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft {
   margin-top: 2rem;
 }
 
-.overview .allView .leftView .botTop .boxLeft ul li .text {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft ul li .text {
   color: #666666;
   font-weight: 300;
   line-height: 35px;
 }
 
-.overview .allView .leftView .botTop .boxLeft ul li .icon {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxLeft ul li .icon {
   display: inline-block;
   color: #141948;
   font-size: 20px;
   font-weight: 700;
 }
 
-.overview .allView .leftView .botTop .boxRight {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight {
   margin-top: 2rem;
 }
 
-.overview .allView .leftView .botTop .boxRight ul li .text {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight ul li .text {
   color: #666666;
   font-weight: 300;
   line-height: 35px;
 }
 
-.overview .allView .leftView .botTop .boxRight ul li .icon {
+.overview .allView .leftView .tabBottom .tabBox .botTop .boxRight ul li .icon {
   color: #141948;
   font-size: 20px;
   font-weight: 700;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion {
+  margin: 40px 0;
+  border: 1px solid rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5 {
+  padding: 20px;
+  font-size: 17px;
+  color: #141948;
+  font-weight: bold;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel {
+  width: 100%;
+  display: none;
+  overflow: hidden;
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul {
+  margin: 0%;
+  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li {
+  position: relative;
+  padding: 20px;
+  font-weight: 200;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li.bagc {
+  background-color: #f8f8f8;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a {
+  text-decoration: none;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span {
+  text-decoration: none;
+  text-align: right;
+  font-family: heebo;
+  color: #666666;
+  -webkit-transition: 0.2s ease;
+  transition: 0.2s ease;
+  font-size: 15px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span:hover {
+  color: #3BBCA7;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a span i {
+  margin-right: 5px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel ul li a .prev {
+  position: absolute;
+  font-size: 14px;
+  width: 10%;
+  padding: 5px;
+  border-radius: 3px;
+  text-align: center;
+  background-color: #3BBCA7;
+  color: white;
+  display: inline;
+  font-weight: 200;
+  right: 5%;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst img {
+  border-radius: 50px;
+  width: 100px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox {
+  margin-top: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox i {
+  padding: 8px;
+  color: #666666;
+  border-radius: 20px;
+  border: 1px solid #666666;
+  margin-right: 5px;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
+  cursor: pointer;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .leftInst .iconBox i:hover {
+  background-color: #3BBCA7;
+  color: white;
+  border: 1px solid #3BBCA7;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst {
+  margin-left: -2rem;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst h4 {
+  color: #141948;
+  margin-bottom: 30px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.instructor .instBox .rightInst span {
+  font-size: 14px;
+  color: #666666;
+  line-height: 30px;
+}
+
+.overview .allView .rightView {
+  -webkit-box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+          box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 0 0 10px 10px;
+  margin-top: -200px;
+  position: -webkit-sticky;
+  position: sticky;
+  top: -100px;
+  padding-bottom: 25px;
+}
+
+.overview .allView .rightView .videoBox {
+  position: relative;
+}
+
+.overview .allView .rightView .videoBox .videoImg img {
+  overflow: hidden;
+}
+
+.overview .allView .rightView .videoBox .videoImg i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  padding: 18px;
+  background-color: white;
+  border-radius: 25px;
+}
+
+.overview .allView .rightView .videoBox .videoPlay i {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 20px;
+  z-index: 1;
+  background-color: white;
+  padding: 18px;
+  border-radius: 25px;
+}
+
+.overview .allView .rightView .midBox {
+  margin: 20px 40px;
+  border-bottom: 1px solid rgba(144, 142, 142, 0.184);
+  padding-bottom: 20px;
+}
+
+.overview .allView .rightView .midBox ul li {
+  position: relative;
+  padding-bottom: 10px;
+}
+
+.overview .allView .rightView .midBox ul li a {
+  color: #666666;
+  font-size: 15px;
+}
+
+.overview .allView .rightView .midBox ul li a span {
+  font-weight: 500;
+}
+
+.overview .allView .rightView .midBox ul li a .date {
+  position: absolute;
+  right: 5%;
+  display: inline;
+  font-size: 14px;
+}
+
+.overview .allView .rightView .botBox {
+  padding: 0 2rem;
+}
+
+.overview .allView .rightView .botBox ul li {
+  position: relative;
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(144, 142, 142, 0.184);
+}
+
+.overview .allView .rightView .botBox ul li:last-child {
+  border: none;
+}
+
+.overview .allView .rightView .botBox ul li a {
+  text-decoration: none;
+  color: #666666;
+}
+
+.overview .allView .rightView .botBox ul li a span {
+  font-size: 14px;
+  color: #141948;
+  font-weight: 600;
+}
+
+.overview .allView .rightView .botBox ul li a span i {
+  margin-right: 10px;
+  color: #666666;
+}
+
+.overview .allView .rightView .botBox ul li a .info {
+  display: inline;
+  position: absolute;
+  right: 15px;
+  font-size: 13px;
+}
+
+.overview .allView .rightView .botBox .source {
+  width: 75%;
+  margin: 10px auto;
+  border: 2px solid #3BBCA7;
+  text-align: center;
+  border-radius: 5px;
+  position: relative;
+}
+
+.overview .allView .rightView .botBox .source:hover .tool {
+  visibility: visible;
+}
+
+.overview .allView .rightView .botBox .source a {
+  display: block;
+  padding: 7px 0;
+  color: #3BBCA7;
+  font-weight: 100;
+  text-decoration: none;
+}
+
+.overview .allView .rightView .botBox .source a i {
+  margin-right: 5px;
+}
+
+.overview .allView .rightView .botBox .source .tool {
+  position: absolute;
+  top: -75%;
+  visibility: hidden;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 50%;
+  z-index: 1;
+}
+
+.overview .allView .rightView .botBox .source .tool i {
+  margin: 0;
+  padding: 0;
+  color: white;
+  padding: 5px;
+  margin-left: -5px;
+  vertical-align: middle;
+  background-color: #141948;
+}
+
+.overview .allView .rightView .botBox .source .tool i:hover {
+  background-color: rgba(12, 12, 145, 0.768);
 }
 
 @media (max-width: 768px) {
