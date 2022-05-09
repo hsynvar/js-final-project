@@ -124,6 +124,7 @@
               padding: 0 35px 8px 15px;
               border-bottom: 3px solid #ababab;
               color: #ababab;
+              position: relative;
 
               &.first {
                 color: $darkblue;
@@ -131,6 +132,19 @@
               }
             }
             &.active{
+              h5{
+                color: $darkblue;
+                &::before {
+                  position: absolute;
+                  content: '';
+                  width: 100%; 
+                  height: 2px;
+                  bottom: -2px;
+                   left: 0;
+                  background-color: $aqua;
+              }
+              }
+
                 
             }
           }
@@ -354,6 +368,85 @@
                   }
                  
 
+              }
+              .botRev{
+                padding: 20px 0;
+                button{
+                  padding: 10px 20px ;
+                  background-color: $aqua;
+                  color: $white;
+                  border: none;
+                  border-radius: 5px;
+                  font-size: 14px;
+                  margin-top: 20px;
+                  position: relative;
+                  &:hover{
+                    &::before{
+                      opacity: 0;
+                      visibility: hidden;
+
+                    }
+                  }
+                  &::before{
+                    content: '';
+                    position: absolute;
+                    top: 0%;
+                    left: 0%;
+                    width: 100%;
+                    height: 100%;
+                    background-color: $aqua;
+                    border-radius: 5px;
+                    overflow: hidden;
+                    transition: 0.7s;
+                  }
+                }
+                h2{
+                  color: $darkblue;
+                  font-weight: 600;
+                }
+                .comment{
+                  &.fred{
+                    border: none;
+                  }
+                 
+                  padding: 30px 0;
+                  border-bottom: 1px solid rgba(100, 100, 111, 0.2);
+                  .imgBox{
+                    img{
+                      width: 100px;
+                      border-radius: 50px;
+                    }
+                  }
+                  .textBox{
+                    position: relative;
+                    h4{
+                      color: $darkblue;
+                    }
+                    h6{
+                      margin-top: 20px ;
+                      color: $darkblue;
+                      font-weight: 600;
+                      font-size: 13px;
+                    }
+                    span{
+                      line-height: 30px;
+                      color: $textColor;
+                      font-size: 16px;
+                      font-weight: 200;
+                    }
+                    .iconBox{
+                      position: absolute;
+                      top: 0;
+                      right: 3%;
+                      i{
+                        color: $yellow;
+                        margin-right: 2px;
+                        font-size: 20px;
+                      }
+                    }
+
+                  }
+                }
               }
           }
         }
