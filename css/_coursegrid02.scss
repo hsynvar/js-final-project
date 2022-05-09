@@ -404,7 +404,65 @@ a {
 }
 
 @media (min-width: 768px) and (max-width: 992px) {
+    .courseGrid {
+        padding: 3rem;
+        .bigBox {
+            .textBox {
+                width: 100%;
+                padding-top: 2rem;
+                h1 {
+                    font-size: 32px;
+                }
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+    .expLore {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        .topText {
+            width: 100%;
+            ul {
+                text-align: center;
+                width: 80%;
+                padding: 0;
+                li {
+                    a{
+                        font-size: 13px;
+                        margin: 0;
+                        padding-right: 5px;
+                        .numbs{
+                            right: 0;
+                            top: -1px;
+                        }
+                    }
+                    .botBig {
+                        width: 100%;
+                        left: 0%;
+                        .courseBox {
+                            width: 100%;
+                            .imgBox {
+                                width: 100%;
+                                object-fit: cover;
+                                img{
+                                    width: 100%;
+                                    
+                                }
+                            }
+                            .free {
+                                top: 55%;
+                                transform: translateY(-55%);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+      
+    }
 }
 
-@media (min-width: 992px) and (max-width: 1200px) {
-}
+

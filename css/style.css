@@ -368,6 +368,64 @@ a {
   }
 }
 
+@media (min-width: 768px) and (max-width: 992px) {
+  .courseGrid {
+    padding: 3rem;
+  }
+  .courseGrid .bigBox .textBox {
+    width: 100%;
+    padding-top: 2rem;
+  }
+  .courseGrid .bigBox .textBox h1 {
+    font-size: 32px;
+  }
+  .courseGrid .bigBox .textBox p {
+    font-size: 14px;
+  }
+  .expLore {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  .expLore .topText {
+    width: 100%;
+  }
+  .expLore .topText ul {
+    text-align: center;
+    width: 80%;
+    padding: 0;
+  }
+  .expLore .topText ul li a {
+    font-size: 13px;
+    margin: 0;
+    padding-right: 5px;
+  }
+  .expLore .topText ul li a .numbs {
+    right: 0;
+    top: -1px;
+  }
+  .expLore .topText ul li .botBig {
+    width: 100%;
+    left: 0%;
+  }
+  .expLore .topText ul li .botBig .courseBox {
+    width: 100%;
+  }
+  .expLore .topText ul li .botBig .courseBox .imgBox {
+    width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .expLore .topText ul li .botBig .courseBox .imgBox img {
+    width: 100%;
+  }
+  .expLore .topText ul li .botBig .courseBox .free {
+    top: 55%;
+    -webkit-transform: translateY(-55%);
+            transform: translateY(-55%);
+  }
+}
+
 a {
   text-decoration: none;
   font-family: heebo;
@@ -738,6 +796,18 @@ a {
   font-size: 17px;
   color: #141948;
   font-weight: bold;
+  position: relative;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5::after {
+  position: absolute;
+  content: '\02795';
+  right: 4%;
+  font-size: 13px;
+}
+
+.overview .allView .leftView .tabBottom .tabBox.curriculum .accordion h5.active::after {
+  content: '\2796';
 }
 
 .overview .allView .leftView .tabBottom .tabBox.curriculum .accordion .panel {
@@ -986,10 +1056,16 @@ a {
 }
 
 .overview .allView .rightView .videoBox {
+  width: 100%;
   position: relative;
 }
 
+.overview .allView .rightView .videoBox .videoImg {
+  width: 100%;
+}
+
 .overview .allView .rightView .videoBox .videoImg img {
+  width: 100%;
   overflow: hidden;
 }
 
@@ -1146,8 +1222,40 @@ a {
     margin: 0;
     padding: 20px 0;
   }
+  .overview .allView .leftView .tabBottom .tabBox.reviews .botRev {
+    margin-bottom: 2rem;
+  }
+  .overview .allView .leftView .tabBottom .tabBox.reviews .botRev .comment .textBox span {
+    font-size: 14px;
+  }
   .overview .allView .rightView {
     margin: 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  .completeCourse .bigCourse .textBox {
+    width: 90%;
+  }
+  .completeCourse .bigCourse .textBox h2 {
+    font-size: 35px;
+  }
+  .completeCourse .bigCourse .textBox span {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .completeCourse .bigCourse .textBox .person {
+    margin-top: 2rem;
+  }
+  .completeCourse .bigCourse .textBox .update {
+    padding: 0;
+    margin: -15px 0 0 3.3rem;
+  }
+  .completeCourse .bigCourse .textBox .update h6 {
+    font-size: 12px;
+  }
+  .overview .allView .rightView {
+    margin-top: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */

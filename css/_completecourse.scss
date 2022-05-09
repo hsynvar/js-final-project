@@ -228,6 +228,18 @@
                 font-size: 17px;
                 color: $darkblue;
                 font-weight: bold;
+                position: relative;
+                &::after{
+                  position: absolute;
+                  content: '\02795';
+                  right: 4%;
+                  font-size: 13px;
+                }
+                &.active{
+                  &::after{
+                    content: '\2796';
+                  }
+                }
               }
 
               .panel {
@@ -464,9 +476,12 @@
       padding-bottom: 25px;
 
       .videoBox {
+        width: 100%;
         position: relative;
         .videoImg {
+          width: 100%;
           img {
+            width: 100%;
             overflow: hidden;
           }
           i {
@@ -649,6 +664,22 @@
                             }
                         }
                     }
+                    &.reviews{
+                      .botRev{
+                        margin-bottom: 2rem;
+                        .comment{
+                          .textBox{
+                            span{
+                              font-size: 14px;
+                            }
+                          }
+
+                        }
+                        
+                        
+                      }
+
+                    }
                   }
               }
           }
@@ -659,3 +690,45 @@
   }
 
 }
+@media (min-width: 768px) and (max-width: 992px) {
+  .completeCourse {
+    .bigCourse {
+      .textBox {
+        width: 90%;
+
+        h2 {
+          font-size: 35px;
+        }
+
+        span {
+          font-size: 18px;
+          line-height: 28px;
+        }
+
+        .person {
+          margin-top: 2rem;
+        }
+
+        .update {
+          padding: 0;
+          margin: -15px 0 0 3.3rem;
+
+          h6 {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+.overview{
+  .allView{
+    .rightView{
+      margin-top: 2rem;
+    }
+  }
+}
+
+}
+
+
+
